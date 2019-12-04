@@ -1,0 +1,25 @@
+Objectives:
+
+-Build a Binary Search Tree in C++, document the process, offer my perspective, learn (forever), not panic!!! (it's just 5 minutes)
+
+-No searching for specific references on Binary search tree, only on the C++ language and process. 
+
+Slide Deck rough draft:
+
+-About me 
+	Rob (GH, LinkedIn, Email)
+	Rails developer, background...web development (non traditional path, want to learn and improve my knowledge of data structures)
+
+-The Objective
+	Learn a bit and begin to understand some C++
+	Stipulations (no cheating, no reference on the bsearch problem)
+	All the research on C++
+	what == success; the tree can store and stack data...
+	what == stretch goals?  delete, traverse, search
+
+-Where we start
+	C++ has classes right?  Lets make a class??
+	Weigh my options...functional...prolly not cuz I am not too familiar 
+	Procedural (this seems possible, and maybe the proper way to solve this problem?  But thinking about nodes and trees as one large function is hard...
+	Object Oriented?  Same problem/New Language...this seems like a winner for me...I need to at least get the tree to read data to be happy with this experiment
+
