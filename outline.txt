@@ -20,6 +20,6 @@ Slide Deck rough draft:
 -Where we start
 	C++ has classes right?  Lets make a class??
 	Weigh my options...functional...prolly not cuz I am not too familiar 
-	Procedural (this seems possible, and maybe the proper way to solve this problem?  But thinking about nodes and trees as one large function is hard...
+	Procedural (this seems possible, and maybe the proper way to solve this problem?  But thinking about nodes and trees as one long set of steps is hard...
 	Object Oriented?  Same problem/New Language...this seems like a winner for me...I need to at least get the tree to read data to be happy with this experiment
 
