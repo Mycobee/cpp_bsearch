@@ -36,7 +36,11 @@ bool Search(Node* root,int data) {
 
 int main() {
 	Node* root = NULL;
-	root = Insert(root,15);
-	root = Insert(root,10);
-	root = Insert(root,5);
+	root = Insert(root,15); root = Insert(root,10); root = Insert(root,20);
+	root = Insert(root,25); root = Insert(root,8); root = Insert(root,12);
+	int number;
+	std::cout << "Enter a number to be searched\n";
+	std::cin>>number;
+	if( Search(root,number) == true) std::cout << "Found\n";
+	else std::cout << "Not found!\n";
 };
