@@ -1,40 +1,28 @@
 #include <iostream>
 
-class Node
-{
-				public:
-				int key;
-				int left;
-				int right;
+struct Node {
+	int data;
+	Node* left;
+	Node* right;
 };
 
-class Tree
-{
-	public:
-	int root;
-	void readKey(int key);
+Node* GetNewNode(int data) {
+	Node* newNode = new Node();
+	newNode->data = data;
+	newNode->left = newNode->right = NULL;
+	return newNode;
+}
 
+Node* Insert(Node* root,int data) {
+	if (root==NULL) { //empty tree
+		root = GetNewNode(data);
+		return root;
+	}				
+}
+
+int main() {
+	Node* root = NULL;
+	root = Insert(root,15);
+	root = Insert(root,10);
+	root = Insert(root,5);
 };
-
-void Tree::readKey(int key) {  // Method/function defined inside the class
-	if ( root == 0 ) { 
-		//set the root
-		root == key;
-	}
-}
-
-
-int main () 
-{ 
-	Node node1;
-	Tree tree1;
-	tree1.root = 0;
-	tree1.readKey(10);
-	node1.key = 5;
-	node1.left = 3;
-	node1.right= 3;
-	
-	std::cout << node1.key << " " << node1.left << " " << node1.right; 
-	std::cout << tree1.root; 
-	return 0;
-}
