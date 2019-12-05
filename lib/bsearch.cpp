@@ -18,7 +18,21 @@ Node* Insert(Node* root,int data) {
 		root = GetNewNode(data);
 		return root;
 	}				
+	else if(data <= root->data) {
+		root->left = Insert(root->left,data);
+	}
+	else {
+		root->right = Insert(root->right,data);	
+	}
+	return root;
 }
+
+bool Search(Node* root,int data) {
+	if(root==NULL) return false;
+	else if(root->data == data) return true;
+	else if(data <= root->data) return Search(root->left,data);
+	else return Search(root->right,data);
+};
 
 int main() {
 	Node* root = NULL;
